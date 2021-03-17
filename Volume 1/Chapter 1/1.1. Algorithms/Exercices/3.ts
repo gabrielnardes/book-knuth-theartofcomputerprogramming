@@ -1,7 +1,7 @@
 /*
-
 QUESTION
-3. [20] Change Algorithm E (for the sake of efficiency) so that all trivial replacement operations such as “m ← n” are avoided. Write this new algorithm in the style of Algorithm E, and call it Algorithm F.
+3. [20] Change Algorithm E (for the sake of efficiency) so that all trivial replacement operations such as “m ← n” are avoided. 
+Write this new algorithm in the style of Algorithm E, and call it Algorithm F.
 
 ANSWER
 F1. [Remainder m/n.] Divide m by n and let m be the remainder.
