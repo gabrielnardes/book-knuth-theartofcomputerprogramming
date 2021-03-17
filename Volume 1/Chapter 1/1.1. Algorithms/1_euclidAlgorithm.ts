@@ -172,27 +172,3 @@ findGCDLoop(m, n);
 findGCDRecursion(m, n);
 findGCDLoopStep0(m, n);
 findGCDRecursionStep0(m, n);
-
-findGCDRecursion(1, 5);
-findGCDRecursion(2, 5);
-findGCDRecursion(3, 5);
-findGCDRecursion(4, 5);
-findGCDRecursion(5, 5);
-
-findGCDRecursion(5, 1); // 1
-findGCDRecursion(5, 2); // 2
-findGCDRecursion(5, 3); // 3
-findGCDRecursion(5, 4); // 2
-findGCDRecursion(5, 5); // 1
-
-findGCDRecursion(5, 6); // 3
-findGCDRecursion(5, 7); // 4
-findGCDRecursion(5, 8); // 5
-findGCDRecursion(5, 9); // 4
-findGCDRecursion(5, 10); // 2
-
-findGCDRecursion(5, 11); // 3
-findGCDRecursion(5, 12); // 4
-findGCDRecursion(5, 13); // 5
-findGCDRecursion(5, 14); // 4
-findGCDRecursion(5, 15); // 2
