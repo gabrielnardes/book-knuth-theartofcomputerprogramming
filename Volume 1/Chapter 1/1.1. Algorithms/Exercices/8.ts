@@ -1,3 +1,27 @@
+/*
+
+QUESTION
+8. [M25] Give an “effective” formal algorithm for computing the greatest common
+divisor of positive integers m and n, by specifying θj, ϕj, aj, bj as in Eqs. (3). Let the
+input be represented by the string ambn, that is, m a’s followed by n b’s. Try to make
+your solution as simple as possible. [Hint: Use Algorithm E, but instead of division in
+step E1, set r ← |m − n|, n ← min(m, n).]
+
+ANSWER
+Let A = {a, b, c}, N = 5. The algorithm will terminate with the string agcd(m,n).
+
+j    θj       ϕj    bj aj
+-------------------------
+0    ab    (empty)  1  2   Remove one a and one b, or go to 2.
+1 (empty)     c     0  0   Add c at extreme left, go back to 0.
+2    a        b     2  3   Change all a’s to b’s.
+3    c        a     3  4   Change all c’s to a’s.
+4    b        b     0  5   If b’s remain, repeat.
+
+Each iteration either decreases m or keeps m unchanged and decreases n.
+
+*/
+
 function thereIsAB(o: string): [boolean, number] {
     let notFound: boolean = true;
     let i: number = 0;
